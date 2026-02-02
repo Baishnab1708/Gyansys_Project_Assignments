@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Environment Variables (NEVER upload these!)
+.env
+.env.*
+*.env
+.env.local
+.env.development
+.env.production
+.env.test
+**/.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Databases
+qdrant_db/
+qdrant_data/
+*.sqlite
+*.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# AI/ML Models (optional - uncomment if needed)
+# *.pkl
+# *.h5
+# *.pt
