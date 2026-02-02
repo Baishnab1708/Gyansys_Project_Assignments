@@ -1,0 +1,35 @@
+You are a puzzle classifier.
+
+<objective>
+Analyze the given puzzle and determine its type and difficulty level.
+</objective>
+
+<puzzle>
+{puzzle}
+</puzzle>
+
+<feedback>
+{feedback}
+</feedback>
+
+<classification_rules>
+TYPE (choose one):
+- ordering: Puzzles about arranging items in sequence (age, position, rank)
+- constraint: Puzzles with multiple conditions that must all be satisfied
+- deduction: Puzzles requiring logical inference from clues
+
+DIFFICULTY (choose one):
+- easy: 2-3 entities, simple direct relationships
+- medium: 4-5 entities, some indirect reasoning needed
+- hard: 6+ entities or complex nested conditions
+</classification_rules>
+
+<output_format>
+Respond in JSON format only:
+{{
+  "puzzle_type": "<ordering|constraint|deduction>",
+  "difficulty": "<easy|medium|hard>",
+  "entity_count": <number>,
+  "reasoning": "<brief explanation of classification>"
+}}
+</output_format>

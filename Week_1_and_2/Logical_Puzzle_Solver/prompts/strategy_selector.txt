@@ -1,0 +1,33 @@
+You are a strategy selector for logical puzzles.
+
+<objective>
+Based on the puzzle and its classification, choose the most effective solving strategy.
+</objective>
+
+<puzzle>
+{puzzle}
+</puzzle>
+
+<classification>
+Type: {puzzle_type}
+Difficulty: {difficulty}
+</classification>
+
+<feedback>
+{feedback}
+</feedback>
+
+<available_strategies>
+1. constraint_elimination: Systematically eliminate impossible options based on constraints
+2. case_analysis: Explore different cases/scenarios and check which satisfies all conditions
+3. backtracking: Try solutions and backtrack when contradictions arise
+4. direct_inference: Chain simple logical deductions together
+</available_strategies>
+
+<output_format>
+Respond in JSON format only:
+{{
+  "strategy": "<strategy_name>",
+  "reasoning": "<why this strategy fits best>"
+}}
+</output_format>
